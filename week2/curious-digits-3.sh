@@ -1,3 +1,3 @@
 #!/bin/sh
 
-grep -P "(?<!\d)\d{2}(?!\d)" curious.txt
+grep '\b[0-9][0-9]\b' curious.txt
