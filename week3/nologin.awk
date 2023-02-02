@@ -1,5 +1,7 @@
 #!/usr/bin/awk -f
 
 BEGIN {
-  FS=","
+  FS=":"
 }
+
+{ if ($NF == "/usr/sbin/nologin") { print $1} /etc/passwd}
